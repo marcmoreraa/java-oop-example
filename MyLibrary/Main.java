@@ -109,6 +109,18 @@ class Main {
     library.addMember(member);
   }
 
+  public static void addBook() {
+    Member member = new Member();
+
+    System.out.print("id : ");
+    member.id = scan.next();
+
+    System.out.print("name : ");
+    member.name = scan.next();
+
+    library.addMember(member);
+  }
+
   public static void borrowBook() {
     System.out.print("id member : ");
     String memberId = scan.next();

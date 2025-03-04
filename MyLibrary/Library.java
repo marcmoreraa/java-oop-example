@@ -34,7 +34,7 @@ class Library {
     this.books.add(book);
 
     Member member = this.getMemberById(memberId);
-    int memberIndex = this.getMemberIndex(member);
+    int memberIndex = this.getMemberIndex(member); //Demana 2 vegades el membre?
     this.members.get(memberIndex).borrowedBooks.remove(book);
   }
 
