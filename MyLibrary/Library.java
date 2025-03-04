@@ -20,6 +20,21 @@ class Library {
     return isExist;
   }
 
+  public void addBook(Book book) {
+    this.books.add(book);
+  }
+
+  public Boolean isBookIdExist(String id) {
+    Boolean isExist = false;
+    for (Book book : this.books) {
+      if (book.id == id) {
+        isExist = true;
+      }
+    }
+    return isExist;
+  }
+
+
   public void giveBook(String bookId, String memberId) {
     Book book = this.getBookById(bookId);
     this.books.remove(book);

@@ -23,8 +23,10 @@ class Main {
       } else if (selectedMenu == 3) {
         addMember();
       } else if (selectedMenu == 4) {
-        borrowBook();
+        addBook();
       } else if (selectedMenu == 5) {
+        borrowBook();
+      } else if (selectedMenu == 6) {
         returnBook();
       } else {
         System.out.println("wrong input");
@@ -40,8 +42,9 @@ class Main {
     System.out.println("1. show books list");
     System.out.println("2. show members list");
     System.out.println("3. add member");
-    System.out.println("4. borrow book");
-    System.out.println("5. return book");
+    System.out.println("4. add book");
+    System.out.println("5. borrow book");
+    System.out.println("6. return book");
     System.out.println("================================");
   }
 
@@ -109,16 +112,17 @@ class Main {
     library.addMember(member);
   }
 
+
   public static void addBook() {
-    Member member = new Member();
+    Book book = new Book();
 
     System.out.print("id : ");
-    member.id = scan.next();
+    book.id = scan.next();
 
     System.out.print("name : ");
-    member.name = scan.next();
+    book.title = scan.next();
 
-    library.addMember(member);
+    library.addBook(book);
   }
 
   public static void borrowBook() {
