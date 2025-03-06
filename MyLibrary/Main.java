@@ -84,8 +84,8 @@ class Main {
 
   public static int chooseMenu() {
     System.out.print("choose menu : ");
-    int pilihan = scan.nextInt();
-    return pilihan;
+    int refactoritzat = scan.nextInt();
+    return refactoritzat;
   }
 
   public static void showBooks() {
